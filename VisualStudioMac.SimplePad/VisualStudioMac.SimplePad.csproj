@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+      <Import Project="MonoDevelop.References.proj" />
+   <PropertyGroup>
+   <TargetFramework>net6.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>.\bin</OutputPath>
+  </PropertyGroup>
+   <ItemGroup>
+    <None Include="MonoDevelop.References.proj" />
+  </ItemGroup>
+</Project>

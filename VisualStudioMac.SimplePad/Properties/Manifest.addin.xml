@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Runtime>
+		<Import assembly="VisualStudioMac.SimplePad.dll" />
+	</Runtime>
+	<Extension path="/MonoDevelop/Ide/Pads">
+		<Pad id="VisualStudioMac.SimplePad.Gui.SimplePad" _label="Simple Pad" class="VisualStudioMac.SimplePad.Gui.SimplePad" defaultStatus="Dockable" defaultPlacement="ProjectPad/bottom" defaultLayout="*" />
+	</Extension>
+</ExtensionModel>
