@@ -9,10 +9,16 @@
 	</Extension>
 
 	<Extension path="/MonoDevelop/Ide/MainMenu/Tools">
-		<CommandItem id="EssentialsAddin.AddinCommands.ShowSolutionFilterPad" />
+		<CommandItem id="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" />
 	</Extension>
 
 	<Extension path="/MonoDevelop/Ide/Pads">
-		<Pad id="VisualStudioMac.SimplePad.Gui.SimplePad" _label="Simple Pad" class="VisualStudioMac.SimplePad.Gui.SimplePad" defaultStatus="Dockable" defaultPlacement="ProjectPad/bottom" defaultLayout="*" />
+		<Pad
+				id="VisualStudioMac.SimplePad.Gui.SimplePad"
+				_label="Simple Pad"
+				class="VisualStudioMac.SimplePad.Gui.SimplePad"
+				defaultStatus="Dockable"
+				defaultPlacement="ProjectPad/bottom"
+				defaultLayout="*" />
 	</Extension>
 </ExtensionModel>
