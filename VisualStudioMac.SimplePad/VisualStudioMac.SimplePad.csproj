@@ -1,13 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
-      <Import Project="MonoDevelop.References.proj" />
-   <PropertyGroup>
+    <Import Project="MonoDevelop.References.proj" />
+
+    <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <ProjectTypeGuids>{86F6BF2A-E449-4B3E-813B-9ACC37E5545F}</ProjectTypeGuids>
+    <!--<ProjectTypeGuids>{86F6BF2A-E449-4B3E-813B-9ACC37E5545F}</ProjectTypeGuids>-->
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>.\bin</OutputPath>
-  </PropertyGroup>
-   <ItemGroup>
-    <None Include="MonoDevelop.References.proj" />
-  </ItemGroup>
+    <SupportedOSPlatformVersion>10.14</SupportedOSPlatformVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="MonoDevelop.References.proj" />
+
+        <PackageReference Include="Microsoft.VisualStudioMac.Sdk" Version="17.0.0-preview.7955" />
+
+        <Reference Include="Xamarin.Mac">
+            <HintPath>\Applications\Visual Studio %28Preview%http://29.app\Contents\MonoBundle\Xamarin.Mac.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+ 
 </Project>
