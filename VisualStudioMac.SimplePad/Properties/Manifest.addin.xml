@@ -3,6 +3,15 @@
 	<Runtime>
 		<Import assembly="VisualStudioMac.SimplePad.dll" />
 	</Runtime>
+
+	<Extension path="/MonoDevelop/Ide/Commands">
+		<Command id="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" _label="Open SimplePad" defaultHandler="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" />
+	</Extension>
+
+	<Extension path="/MonoDevelop/Ide/MainMenu/Tools">
+		<CommandItem id="EssentialsAddin.AddinCommands.ShowSolutionFilterPad" />
+	</Extension>
+
 	<Extension path="/MonoDevelop/Ide/Pads">
 		<Pad id="VisualStudioMac.SimplePad.Gui.SimplePad" _label="Simple Pad" class="VisualStudioMac.SimplePad.Gui.SimplePad" defaultStatus="Dockable" defaultPlacement="ProjectPad/bottom" defaultLayout="*" />
 	</Extension>
