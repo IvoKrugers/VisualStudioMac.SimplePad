@@ -2,9 +2,9 @@
 
 namespace VisualStudioMac.SimplePad.Gui
 {
-    public partial class FilterPadWidget : Widget
+    public partial class SimplePadWidget : Widget
     {
-        public FilterPadWidget()
+        public SimplePadWidget()
         {
             Build();
         }

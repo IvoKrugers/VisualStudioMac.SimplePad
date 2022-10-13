@@ -1,4 +1,5 @@
-﻿using AppKit;
+﻿using System;
+using AppKit;
 using MonoDevelop.Components;
 using MonoDevelop.Ide.Gui;
 
@@ -6,7 +7,7 @@ namespace VisualStudioMac.SimplePad.Gui
 {
     public class SimplePad : PadContent
     {
-        private FilterPadWidget widget;
+        private SimplePadWidget widget;
         private Control control;
 
         public override Control Control
@@ -15,7 +16,7 @@ namespace VisualStudioMac.SimplePad.Gui
             {
                 if (control == null)
                 {
-                    widget = new FilterPadWidget();
+                    widget = new SimplePadWidget();
                     control = new XwtControl(widget);
                 }
                 // Returning control does not work.

@@ -3,7 +3,7 @@ using Xwt.Drawing;
 
 namespace VisualStudioMac.SimplePad.Gui
 {
-    public partial class FilterPadWidget : Widget
+    public partial class SimplePadWidget : Widget
     {
         protected virtual void Build()
         {
