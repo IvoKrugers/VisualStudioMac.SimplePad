@@ -5,7 +5,7 @@
 	</Runtime>
 
 	<Extension path="/MonoDevelop/Ide/Commands">
-		<Command id="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" _label="Open SimplePad" defaultHandler="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" />
+		<Command id="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" _label="Open SimplePads" defaultHandler="VisualStudioMac.SimplePad.OpenSimplePadCommandHandler" />
 	</Extension>
 
 	<Extension path="/MonoDevelop/Ide/MainMenu/Tools">
@@ -20,5 +20,11 @@
 				defaultStatus="Dockable"
 				defaultPlacement="ProjectPad/bottom"
 				defaultLayout="*" />
+
+		<Pad id="VisualStudioMac.SimplePad.Gui.SplitViewPad"
+				_label="Simple Splitview"
+				class="VisualStudioMac.SimplePad.Gui.SplitViewPad"
+				defaultStatus="Dockable"
+				defaultPlacement="Right"/>
 	</Extension>
 </ExtensionModel>

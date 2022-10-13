@@ -1,5 +1,7 @@
-﻿using MonoDevelop.Components.Commands;
+﻿using System;
+using MonoDevelop.Components.Commands;
 using MonoDevelop.Ide;
+using MonoDevelop.Ide.Gui;
 
 namespace VisualStudioMac.SimplePad
 {
@@ -7,18 +9,24 @@ namespace VisualStudioMac.SimplePad
     {
         protected override void Run()
         {
-            var pad = IdeApp.Workbench.GetPad<Gui.SimplePad>();
+            OpenPad<Gui.SimplePad>();
+            OpenPad<Gui.SplitViewPad>();
+        }
+
+        protected override void Update(CommandInfo info)
+        {
+            info.Enabled = true;
+        }
+
+        private void OpenPad<T>()
+        {
+            var pad = IdeApp.Workbench.GetPad<T>();
             if (pad != null)
             {
                 pad.Visible = true;
                 pad.IsOpenedAutomatically = true;
                 pad.BringToFront(true);
             }
-        }
-
-        protected override void Update(CommandInfo info)
-        {
-            info.Enabled = true;
         }
     }
 }

@@ -14,4 +14,4 @@ using Mono.Addins.Description;
 [assembly: AddinUrl("https://github.com/IvoKrugers")]
 
 [assembly: AddinDependency("::MonoDevelop.Core", MonoDevelop.BuildInfo.Version)]
-[assembly: AddinDependency("::MonoDevelop.Ide", MonoDevelop.BuildInfo.Version)] 
+[assembly: AddinDependency("::MonoDevelop.Ide", MonoDevelop.BuildInfo.Version)]
