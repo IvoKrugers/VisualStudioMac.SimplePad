@@ -7,7 +7,7 @@ namespace VisualStudioMac.SimplePad.Gui
     {
         public SplitViewPadWidget()
         {
-            //CanGetFocus = true;
+            CanGetFocus = true;
 
             var paned = new VPaned() { ExpandHorizontal = true, ExpandVertical=true};
             paned.Panel1.Content = new VBox() { BackgroundColor = Colors.CornflowerBlue, MinHeight = 100 };
