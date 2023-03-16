@@ -4,7 +4,7 @@ using Mono.Addins.Description;
 [assembly: Addin(
     "SimplePad",
     Namespace = "VisualStudioMac",
-    Version = "17.0",
+    Version = "17.5",
     Category = "IDE extensions"
 )]
 
