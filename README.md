@@ -1,1 +1,2 @@
 # VisualStudioMac.SimplePad
+test
